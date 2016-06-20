@@ -1,0 +1,15 @@
+{
+  "name": "AnaButtons",
+  "keywords": "button, bounce, signal, input, analog",
+  "description": "Use up to six buttons on just one analog pin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pavelmc/AnaButtons.git"
+  },
+  "version": "0.1",
+  "exclude": [
+    "*.zip"
+  ],
+  "frameworks": "arduino",
+  "platforms": "*"
+}
