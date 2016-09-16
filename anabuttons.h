@@ -55,8 +55,8 @@ class AnaButtons {
  private:
     word lastValue              = 0;
     char lastPressed            = 0;
-    word move[3]                = {-1, 5, 50};  // init as a raising value
-    word amove                  = 0;
+    word move[3]                = {0, 5, 50};  // init as a raising value
+    int amove                   = 0;
     word intervalMillis         = 250;
     unsigned long lastMillis    = 0;
     char pin;

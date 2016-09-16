@@ -44,6 +44,7 @@ char AnaButtons::debounce(char btn) {
     return btn;
 }
 
+
 /*
  * Get the button's status.
  */
@@ -55,15 +56,17 @@ char AnaButtons::getStatus() {
     }
 
     // read the analog pin
+    analogReference(DEFAULT);
     word value = analogRead(pin);
 
     // get the delta averaged
     amove = lastValue;
     amove -= value;
-    amove = ave(amove);
+    amove = word(abs(amove));
+    tdiff = ave(amove);
 
     // is the value stable?
-    if ((amove < -THRESHOLD) & (amove > THRESHOLD)) {
+    if (tdiff > THRESHOLD) {
         // no, it's not
         lastValue = value;
 
