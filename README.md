@@ -1,3 +1,7 @@
+**WARNING!**
+========
+This project is deprecated in favour of [BMux](https://github.com/pavelmc/BMux) that is more efficient in code and have more features. This repo will be keep here only for reference and educational purposes.
+
 Analog Buttons for Arduino (AnaButtons)
 =======================================
 
